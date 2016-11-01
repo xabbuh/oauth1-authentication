@@ -1,0 +1,37 @@
+{
+    "name": "xabbuh/oauth1-authentication",
+    "description": "OAuth1 authentication for the HTTPlug library",
+    "keywords": ["OAuth", "OAuth1", "HTTP", "HTTPlug", "plugin", "authentication", "security"],
+    "homepage": "https://github.com/xabbuh/oauth1-authentication",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Flothmann",
+            "homepage": "https://github.com/xabbuh"
+        }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "api-clients/psr7-oauth1": "dev-master",
+        "php-http/message": "^1.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.3"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Xabbuh\\Http\\Authentication\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Xabbuh\\Http\\Authentication\\": "spec/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
