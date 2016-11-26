@@ -10,8 +10,10 @@ use Psr\Http\Message\RequestInterface;
 
 class OAuth1Spec extends ObjectBehavior
 {
-    function let(RequestSigner $requestSigner, AccessToken $accessToken, TokenSecret $tokenSecret, RequestSigner $accessTokenRequestSigner)
+    function let(RequestSigner $requestSigner, RequestSigner $accessTokenRequestSigner)
     {
+        $accessToken = new AccessToken('AccessToken');
+        $tokenSecret = new TokenSecret('TokenSecret');
         $this->beConstructedWith($requestSigner, $accessToken, $tokenSecret);
 
         $requestSigner->withAccessToken($accessToken, $tokenSecret)->willReturn($accessTokenRequestSigner);
