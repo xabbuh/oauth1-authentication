@@ -18,6 +18,7 @@
     "require-dev": {
         "phpspec/phpspec": "~2.3"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Xabbuh\\Http\\Authentication\\": "src/"
