@@ -9,16 +9,10 @@ Sign PSR-7 requests using OAuth1 when using them with HTTPlug clients.
 Installation
 ------------
 
-This package requires `api-clients/psr7-oauth1` to sign the requests:
+Install the OAuth1 integration using Composer:
 
 ```bash
-$ composer require --no-update api-clients/psr7-oauth1:dev-master
-```
-
-You can then install the OAuth1 integration using Composer as usual:
-
-```bash
-$ composer require xabbuh/oauth1-authentication:~0.1@dev
+$ composer require xabbuh/oauth1-authentication:^1.0
 ```
 
 Usage
