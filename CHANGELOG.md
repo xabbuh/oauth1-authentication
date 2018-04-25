@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.2.0
+-----
+
+* dropped HHVM support
+
 1.0.0
 -----
 
