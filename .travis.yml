@@ -6,16 +6,15 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
-php:
-  - 5.6
-
 matrix:
   fast_finish: true
   include:
-    - php: 5.5
+    - php: 5.6
       env: $COMPOSER_OPTIONS="--prefer-lowest"
     - php: 7.0
       env: xdebug="yes"
+    - php: 7.1
+    - php: 7.2
 
 before_install:
   - if [[ "$TRAVIS_PHP_VERSION" != "hhvm" && "$xdebug" != "yes" ]]; then phpenv config-rm xdebug.ini; fi
